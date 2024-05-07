@@ -5,7 +5,7 @@ class NavBarSimple extends Component {
 
     constructor(props) {
         super(props);
-
+        
         this.state = {
             message: "Hello, guest!",
             buttonText: "Log in"
@@ -17,7 +17,7 @@ class NavBarSimple extends Component {
             message: prevState.message === "Hello, guest!" ? "Welcome back, user!" : "Hello, guest!",
             buttonText: prevState.buttonText === "Log out" ? "Log in" : "Log out",
         }), ()=> console.log(this.state.message))
-
+        
     }
 
     render() {
